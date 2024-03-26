@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Charm;
+    src: url(fonts/Charm.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-size: 1.125rem;
@@ -14,11 +23,21 @@ nav {
     height: 5em;
     position: sticky;
     top: 0;
-    box-shadow: 0 0 1.5em 1.5em white;
+    z-index: 2;
+    box-shadow: 0 0 3em 3em white;
 }
 
 nav a img {
     height: 4em;
+}
+
+nav a img:hover {
+    animation: turner 2s ease-out;
+}
+
+@keyframes turner {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(1080deg);}
 }
 
 nav ul {
@@ -31,21 +50,19 @@ nav ul {
 nav ul a {
     display: flex;
     align-items: center;
-    height: 75%;
+    height: 50%;
     padding: 0 1em;
     margin: 0 1em;
-    border-radius: 0.5em 0.5em 0 0;
+    border-radius: 0.25em 0.25em 0 0;
     transition: all 500ms;
 }
 
-nav ul a:hover {
-    scale: 1.25;
-    background-color: white;
-    color: black;
+nav ul a:hover,
+nav ul a:focus {
+    scale: 1.25 !important;
+    background-color: white !important;
+    color: black !important;
 }
-
-nav ul a li {
-} 
 
 a {
     text-decoration: none;
@@ -56,8 +73,69 @@ ul {
     list-style: none
 }
 
+header {
+    font-family: Charm;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 2em;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 2em;
+    padding: 0 5em;
+}
+
+.content img {
+    box-shadow: 0 0 2em 0 lightgrey;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+#Aktuelles img {
+    width: 25%;
+    border-radius: 0 0 100vw 100vw;
+}
+
+#Aktuelles .item {
+    width: 70%;
+}
+
+#Presse .item {
+    width: 70%;
+    text-align: right;
+}
+
+#Presse img {
+    width: 25%;
+    border-radius: 2em;
+    filter: grayscale(90%);
+}
+
+#Vorstand img {
+    width: 25%;
+    border-radius: 2em;
+}
+
+#Vorstand .item {
+    width: 30%;
+}
+
+#Vorstand tr:hover {
+    background-color: lightgray;
+}
+
 footer {
     background-color: rgb(0, 63, 31);
+    align-items: center;
+    font-weight: 600;
     color: white;
-    display: flex;
+    height: 3em;
 }
