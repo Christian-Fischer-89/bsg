@@ -86,46 +86,44 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    margin-top: 2em;
-    padding: 0 5em;
+    padding: 0;
+    padding-top: 8em;
+}
+
+.content .content-img {
+    width: 25%;
 }
 
 .content img {
     box-shadow: 0 0 2em 0 lightgrey;
+    max-width: 100%;
 }
 
 .item {
+    width: 70%;
     display: flex;
     flex-direction: column;
 }
 
 #Aktuelles img {
-    width: 25%;
     border-radius: 0 0 100vw 100vw;
 }
 
-#Aktuelles .item {
-    width: 70%;
-}
-
 #Presse .item {
-    width: 70%;
     text-align: right;
 }
 
 #Presse img {
-    width: 25%;
     border-radius: 2em;
     filter: grayscale(90%);
 }
 
 #Vorstand img {
-    width: 25%;
     border-radius: 2em;
 }
 
-#Vorstand .item {
-    width: 30%;
+#Vorstand table {
+    max-width: 50%;
 }
 
 #Vorstand tr:hover {
@@ -133,9 +131,10 @@ header {
 }
 
 footer {
-    background-color: rgb(0, 63, 31);
+    background-image: linear-gradient(to bottom, white, rgb(0, 63, 31));
+    justify-content: space-around !important;
     align-items: center;
     font-weight: 600;
     color: white;
-    height: 3em;
+    padding-bottom: 4em !important;
 }
