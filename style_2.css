@@ -171,13 +171,18 @@ footer {
         position: sticky;
         top: 0;
         z-index: 2;
+        cursor: pointer;
     }
 }
 
 @media (max-width: 768px) {
-    h1,
-    h2 {
+    h1 {
         font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 1.5rem;
     }
 
     .content {
