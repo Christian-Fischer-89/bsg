@@ -9,7 +9,7 @@
     </head>
     <body>
         <nav>
-            <a href="#top"><img src="images/icon_circled.png"></a>
+            <a href="#top"><img src="images/icon_circled.png" id="first"></a>
             <ul>
                 <a href="#Aktuelles" class="nav-item" id="1" onclick="check('nav-item', '1')"><li>Aktuelles</li></a>
                 <a href="#Presse" class="nav-item" id="2" onclick="check('nav-item', '2')"><li>Presse</li></a>
@@ -21,9 +21,9 @@
                 <a href="#Galerie" class="nav-item" id="8" onclick="check('nav-item', '8')"><li>Galerie</li></a>
                 <a href="#Links" class="nav-item" id="9" onclick="check('nav-item', '9')"><li>Links</li></a>
             </ul>
-            <a href="#top"><img src="images/icon_circled.png"></a>
+            <a href="#top"><img src="images/icon_circled.png" id="second"></a>
         </nav>
-        <header>
+        <header onclick="location.href='#top';">
             <h1>Bürger-Schützen Gesellschaft Kevelaer e.V. 1881</h1>
         </header>
         <main>
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="content" id="Presse">
-                <div class="item">
+                <div class="item right">
                     <h2>Pressemitteilungen</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
@@ -85,46 +85,46 @@
                 </div>
                 <div class="item">
                     <h2>Der aktuelle Vorstand</h2>
-                    <table class="vorstand" cellspacing="0" cellpadding="0">
+                    <table cellspacing="0" cellpadding="0">
                         <tr>
                             <td>Präsident</td>
-                            <td>Stefan Boßmann</td>
+                            <td class="name">Stefan Boßmann</td>
                         </tr>
                         <tr>
                             <td>Stellv. Präsident</td>
-                            <td>Thomas Nolden</td>
+                            <td class="name">Thomas Nolden</td>
                         </tr>
                         <tr>
                             <td>Kassierer</td>
-                            <td>Robert Gorthmanns</td>
+                            <td class="name">Robert Gorthmanns</td>
                         </tr>
                         <tr>
                             <td>Schriftführer</td>
-                            <td>Jan Klucken</td>
+                            <td class="name">Jan Klucken</td>
                         </tr>
                         <tr>
                             <td>Hauptmann</td>
-                            <td>Jürgen Borghs</td>
+                            <td class="name">Jürgen Borghs</td>
                         </tr>
                         <tr>
                             <td>1. Beisitzer</td>
-                            <td>Thomas Ingenpass</td>
+                            <td class="name">Thomas Ingenpass</td>
                         </tr>
                         <tr>
                             <td>2. Beisitzer</td>
-                            <td>Maurice Pastuska</td>
+                            <td class="name">Maurice Pastuska</td>
                         </tr>
                         <tr>
                             <td>3. Beisitzer</td>
-                            <td>Marcus Plümpe</td>
+                            <td class="name">Marcus Plümpe</td>
                         </tr>
                         <tr>
                             <td>Fähnrich</td>
-                            <td>Tobias Kocken</td>
+                            <td class="name">Tobias Kocken</td>
                         </tr>
                         <tr>
                             <td>Pressearbeit</td>
-                            <td>Bernd Pool</td>
+                            <td class="name">Bernd Pool</td>
                         </tr>
                     </table>
                 </div>
