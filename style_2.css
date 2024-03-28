@@ -115,6 +115,7 @@ header {
 
 .right {
     text-align: right;
+    align-items: flex-end;
 }
 
 #Aktuelles img {
@@ -140,6 +141,28 @@ header {
 
 #Vorstand tr:hover {
     background-color: lightgray;
+}
+
+#Downloads img {
+    border-radius: 2em;
+}
+
+#Downloads a {
+    width: fit-content;
+    cursor: pointer;
+}
+
+#Downloads a::after {
+    display: block;
+    content: "";
+    border-bottom: 0.175em solid black;
+    transform: scaleX(0);
+    transition: transform 250ms ease-out;
+    transform-origin: 0% 50%;
+}
+
+#Downloads a:hover::after {
+    transform: scaleX(1);
 }
 
 footer {
@@ -208,6 +231,7 @@ footer {
 
     .right {
         text-align: left;
+        align-items: flex-start;
     }
 
     #Vorstand table {
@@ -216,5 +240,9 @@ footer {
 
     footer {
         border: none !important;
+    }
+
+    footer a {
+        padding: 1em 0;
     }
 }
