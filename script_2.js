@@ -9,3 +9,14 @@ function check(clsName, me) {
     document.getElementById(me).style.color = "black";
     document.getElementById(me).style.scale = "1.25";
 }
+
+const mobNav = document.querySelector(".mob-nav");
+
+mobNav.addEventListener("click", () => {
+    const isOpen = mobNav.getAttribute("aria-expanded");
+    if (isOpen === "false") {
+        mobNav.setAttribute("aria-expanded", "true");
+    } else {
+        mobNav.setAttribute("aria-expanded", "false");
+    }
+});

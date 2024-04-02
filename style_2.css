@@ -222,19 +222,56 @@ footer {
 
     header {
         background-image: linear-gradient(to bottom, rgb(0, 63, 31), transparent);
+        align-items: center;
         color: white;
         position: sticky;
         top: 0;
         z-index: 2;
         cursor: pointer;
-        padding: 0 0.5em;
+        padding: 0 1.5em;
     }
 }
 
 @media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+
     h1 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         font-weight: 700;
+    }
+
+    .mob-nav {
+        display: flex;
+        width: 15%;
+        padding: 0 0.5em;
+    }
+
+    .mob-nav[aria-expanded="true"] :is(.top, .bot) {
+        y: 45;
+    }
+
+    .mob-nav[aria-expanded="true"] .top {
+        rotate: 45deg;
+    }
+
+    .mob-nav[aria-expanded="true"] .mid {
+        opacity: 0;
+    }
+
+    .mob-nav[aria-expanded="true"] .bot {
+        rotate: -45deg;
+    }
+
+    .mob-nav rect {
+        fill: white;
+        transition: y 250ms ease-in 250ms, rotate 250ms ease-in, opacity 0ms 250ms;
+        transform-origin: center;
+    }
+
+    .mob-nav[aria-expanded="true"] rect {
+        transition: y 250ms ease-in, rotate 250ms ease-in 250ms, opacity 0ms 250ms;
     }
 
     h2 {
@@ -271,9 +308,11 @@ footer {
         padding-top: 2em;
     }
 
-    #Vorstand table {
+    #Vorstand table,
+    #Kalender table {
         min-width: 100%;
     }
+
 
     footer {
         border: none !important;
