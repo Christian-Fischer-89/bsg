@@ -11,12 +11,15 @@ function check(clsName, me) {
 }
 
 const mobNav = document.querySelector(".mob-nav");
+const mobNavbar = document.querySelector(".mob-navbar");
 
 mobNav.addEventListener("click", () => {
     const isOpen = mobNav.getAttribute("aria-expanded");
     if (isOpen === "false") {
         mobNav.setAttribute("aria-expanded", "true");
+        mobNavbar.setAttribute("style", "display:flex");
     } else {
         mobNav.setAttribute("aria-expanded", "false");
+        mobNavbar.setAttribute("style", "display:none");
     }
 });
