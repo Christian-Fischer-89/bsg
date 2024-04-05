@@ -23,3 +23,30 @@ mobNav.addEventListener("click", () => {
         mobNavbar.setAttribute("style", "display:none");
     }
 });
+
+function loadImg(path) {
+    var gallery = document.querySelectorAll(".img-grid");
+    gallery.forEach((div) => {
+        for (var i = 1; i <= div.dataset.count; i++) {
+        const img = document.createElement("img");
+        img.src = "images/" + path + i + ".jpg";
+        img.alt = path + " " + i;
+        div.appendChild(img);
+        }
+    });
+}
+
+function loadImg(path) {
+    var gallery = document.querySelectorAll(".img-grid");
+    gallery.forEach((div) => {
+        for (var i = 1; i <= div.dataset.count; i++) {
+        const img = document.createElement("img");
+        img.src = "images/" + path + i + ".jpg";
+        img.alt = path + " " + i;
+        img.style.width = "100%";
+        div.appendChild(img);
+        }
+    });
+}
+
+document.getElementById("gallery").addeventlistener("load", loadImg("test/"));

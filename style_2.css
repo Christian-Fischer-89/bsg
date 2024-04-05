@@ -158,6 +158,19 @@ h1 {
     flex-direction: column;
 }
 
+.item a::after {
+    display: block;
+    content: "";
+    border-bottom: 0.175em solid black;
+    transform: scaleX(0);
+    transition: transform 250ms ease-out;
+    transform-origin: 0% 50%;
+}
+
+.item a:hover::after {
+    transform: scaleX(1);
+}
+
 .right {
     text-align: right;
     align-items: flex-end;
@@ -180,6 +193,18 @@ h1 {
     text-align: right;
 }
 
+#Vorstand img,
+#Würdenträger img {
+    transform-origin: left top;
+    transition: all 500ms;
+}
+
+#Vorstand img:hover,
+#Historie img:hover,
+#Würdenträger img:hover {
+    scale: 2;
+}
+
 #Vorstand tr:hover {
     background-color: lightgray;
 }
@@ -193,25 +218,38 @@ h1 {
     cursor: pointer;
 }
 
-#Downloads a::after {
-    display: block;
-    content: "";
-    border-bottom: 0.175em solid black;
-    transform: scaleX(0);
-    transition: transform 250ms ease-out;
-    transform-origin: 0% 50%;
-}
-
-#Downloads a:hover::after {
-    transform: scaleX(1);
-}
-
-#Kalender img {
+#Kalender img,
+#Historie img,
+#Würdenträger img,
+#Galerie img {
     border-radius: 1em;
 }
 
 #Kalender tr:hover {
     background-color: lightgray;
+}
+
+#Historie h4 {
+    margin: 0.25em 0;
+}
+
+#Historie img {
+    transform-origin: right top;
+    transition: all 500ms;
+}
+
+#Würdenträger h4 {
+    width: fit-content;
+}
+
+.img-grid {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: auto auto auto;
+}
+
+.img-grid img {
+    width: 100%;
 }
 
 footer {
@@ -320,6 +358,10 @@ footer {
 
     #Aktuelles {
         padding-top: 6em;
+    }
+
+    #Vorstand img:hover {
+        scale: 1;
     }
 
     #Vorstand table,
