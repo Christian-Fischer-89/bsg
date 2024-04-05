@@ -150,6 +150,12 @@ h1 {
 .content img {
     box-shadow: 0 0 2em 0 lightgrey;
     width: 100%;
+    transform-origin: left top;
+    transition: all 500ms;
+}
+
+.content img:hover {
+    scale: 2;
 }
 
 .item {
@@ -176,7 +182,8 @@ h1 {
     align-items: flex-end;
 }
 
-#Aktuelles img {
+#Aktuelles img,
+#Links img {
     border-radius: 0 0 100vw 100vw;
 }
 
@@ -185,24 +192,8 @@ h1 {
     filter: grayscale(90%);
 }
 
-#Vorstand img {
-    border-radius: 2em;
-}
-
 .name {
     text-align: right;
-}
-
-#Vorstand img,
-#Würdenträger img {
-    transform-origin: left top;
-    transition: all 500ms;
-}
-
-#Vorstand img:hover,
-#Historie img:hover,
-#Würdenträger img:hover {
-    scale: 2;
 }
 
 #Vorstand tr:hover {
@@ -213,11 +204,14 @@ h1 {
     border-radius: 2em;
 }
 
-#Downloads a {
+#Downloads a,
+#Würdenträger h4,
+#Links h4 {
     width: fit-content;
     cursor: pointer;
 }
 
+#Vorstand img,
 #Kalender img,
 #Historie img,
 #Würdenträger img,
@@ -229,17 +223,17 @@ h1 {
     background-color: lightgray;
 }
 
-#Historie h4 {
+#Historie h4,
+#Links h4 {
     margin: 0.25em 0;
 }
 
-#Historie img {
+#Presse img,
+#Downloads img,
+#Historie img,
+#Galerie img {
     transform-origin: right top;
     transition: all 500ms;
-}
-
-#Würdenträger h4 {
-    width: fit-content;
 }
 
 .img-grid {
@@ -250,6 +244,10 @@ h1 {
 
 .img-grid img {
     width: 100%;
+}
+
+.img-grid img:hover {
+    scale: 1;
 }
 
 footer {
@@ -347,6 +345,10 @@ footer {
         margin-bottom: 2em;
     }
 
+    .content img:hover {
+        scale: 1;
+    }
+
     .item {
         order: 1;
     }
@@ -368,7 +370,6 @@ footer {
     #Kalender table {
         min-width: 100%;
     }
-
 
     footer {
         border: none !important;
