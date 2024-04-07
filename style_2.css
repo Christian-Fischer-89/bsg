@@ -207,13 +207,17 @@ h1 {
     text-align: center;
 }
 
-#Aktuelles a::after {
+#Aktuelles tr a:hover {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#Aktuelles tr a::after {
     display: none;
 }
 
-#Presse img {
+#Aktuelles img {
     border-radius: 2em;
-    filter: grayscale(90%);
 }
 
 .key {
@@ -250,16 +254,42 @@ tr:hover {
     border-radius: 1em;
 }
 
-#Historie h4,
+.Historie-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em 4em;
+}
+
+.Historie-grid h4 {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.125em solid lightgrey;
+    border-radius: 0.5em;
+    transition: background-color 500ms;
+    text-align: center;
+    
+}
+
+.Historie-grid h4:hover {
+    background-color: lightgrey;
+}
+
+.Historie-grid a {
+    padding: 1em 0;
+}
+
 #Links h4 {
     margin: 0.25em 0;
 }
 
 #Aktuelles img,
-#Vorstand img,
-#Kalender img,
-#Würdenträger img,
-#Links img {
+#Downloads img,
+#Historie img,
+#Galerie img {
     transform-origin: right top;
     transition: all 500ms;
 }
@@ -288,9 +318,18 @@ footer {
     padding-bottom: 4em !important;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1360px) {
     nav img {
         display: none;
+    }
+
+    .Historie-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Historie-grid a {
+        padding: 0.5em 0;
     }
 }
 
