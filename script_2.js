@@ -49,4 +49,12 @@ function loadImg(path) {
     });
 }
 
+function showNews() {
+    document.getElementById("news").style.display= "flex";
+};
+
+function dismiss(element) {
+    element.parentNode.style.display= "none";
+};
+
 document.getElementById("gallery").addeventlistener("load", loadImg("test/"));
