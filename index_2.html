@@ -8,12 +8,6 @@
         <meta http-equiv="content-type" content="charset=utf-8">
     </head>
     <body>
-        <div id="news">
-            <div class="close" onclick="dismiss(this)">
-                <span></span>
-            </div>
-            <h2>Pressearchiv</h2>
-        </div>
         <nav>
             <a href="#top"><img src="images/icon_circled.png" id="first"></a>
             <ul>
@@ -69,49 +63,103 @@
                     <table cellspacing="0" cellpadding="0">
                         <tr>
                             <td class="key">12.12.2020</td>
-                            <td class="name"><a>Ansprache unseres Präsidenten zur "ausgefallenen" Nikolausverlosung</a></td>
+                            <td class="name"><a onclick="showNews()" href="#183">Ansprache unseres Präsidenten zur "ausgefallenen" Nikolausverlosung</a></td>
                         </tr>
                         <tr>
                             <td class="key">12.11.2020</td>
-                            <td class="name"><a>Nachruf zum Tod von Mathias Braun</a></td>
+                            <td class="name"><a onclick="showNews()" href="#182">Nachruf zum Tod von Mathias Braun</a></td>
                         </tr>
                         <tr>
                             <td class="key">08.11.2020</td>
-                            <td class="name"><a>Neue Beiträge</a></td>
+                            <td class="name"><a onclick="showNews()" href="#181">Neue Beiträge</a></td>
                         </tr>
                         <tr>
                             <td class="key">02.09.2019</td>
-                            <td class="name"><a>Buschpartie 2019</a></td>
+                            <td class="name"><a onclick="showNews()" href="#180">Buschpartie 2019</a></td>
                         </tr>
                         <tr>
                             <td class="key">28.08.2019</td>
-                            <td class="name"><a>Berti Metsch verstorben</a></td>
+                            <td class="name"><a onclick="showNews()" href="#177">Berti Metsch verstorben</a></td>
                         </tr>
                         <tr>
                             <td class="key">29.05.2019</td>
-                            <td class="name"><a>Bilder und Pressebericht sind online</a></td>
+                            <td class="name"><a onclick="showNews()">Bilder und Pressebericht sind online</a></td>
                         </tr>
                         <tr>
                             <td class="key">26.05.2019</td>
-                            <td class="name"><a>Georg Vloet ist unser König 2019</a></td>
+                            <td class="name"><a onclick="showNews()">Georg Vloet ist unser König 2019</a></td>
                         </tr>
                         <tr>
                             <td class="key">21.04.2019</td>
-                            <td class="name"><a>Bilder der JHV</a></td>
+                            <td class="name"><a onclick="showNews()">Bilder der JHV</a></td>
                         </tr>
                         <tr>
                             <td class="key">06.04.2019</td>
-                            <td class="name"><a>Website aktualisiert</a></td>
+                            <td class="name"><a onclick="showNews()">Website aktualisiert</a></td>
                         </tr>
                         <tr>
                             <td class="key">25.05.2018</td>
-                            <td class="name"><a>DSGVO</a></td>
+                            <td class="name"><a onclick="showNews()">DSGVO</a></td>
                         </tr>
                     </table>
-                    <h4 onclick="showNews()"><a>Zum Nachrichtenarchiv</a></h4>
+                    <h4 onclick="showNews()"><a href="#news">Zum Nachrichtenarchiv</a></h4>
                 </div>
                 <div class="content-img">
                     <img src="images/Aktuelles/heroImg.jpg">
+                </div>
+            </section>
+            <section id="news" class="overlay">
+                <div class="close-pos">
+                    <div class="close" onclick="hideNews()">
+                        <span></span>
+                    </div>
+                </div>
+                <h2>Pressearchiv</h2>
+                <div class="overlay-item" id="183">
+                    <h3>Ansprache unseres Präsidenten zur "ausgefallenen" Nikolausverlosung 2020</h3>
+                    <video controls>
+                        <source src="images/Aktuelles/news-item/2020 SB Ansprache_1.mp4" type="video/mp4">
+                    </video>
+                    <small><em>JB 12.12.2020</em></small>
+                </div>
+                <div class="overlay-item" id="182">
+                    <h3>Nachruf zum Tod von Mathias Braun</h3>
+                    <h4><a href="pdfs/NachrufMathiasBraun.pdf" download="">Hier geht's zum Download (.pdf)</a></h4>
+                    <small><em>JB 12.11.2020</em></small>
+                </div>
+                <div class="overlay-item" id="181">
+                    <h3>Neue Beiträge</h3>
+                    <p>Unter Aktuelles gibt neue Beiträge.</p>
+                    <small><em>JB 08.11.2020</em></small>
+                </div>
+                <div class="overlay-item" id="180">
+                    <h3>Buschpartie 2019</h3>
+                    <p>Buschkönig ist Marcus Plümpe.</p>
+                    <p>Die Preise haben geschossen: Hannes Selders, Markus Platzer und Patrik Tenhaef.</p>
+                    <p>Tobias Schülpen errang den Preis der Gäste.</p>
+                    <small><em>JB 02.09.2019</em></small>
+                </div>
+                <div class="image-wrapper">
+                    <div class="overlay-image">
+                        <img src="images/Berti_Metsch.thumb_medium.jpg">
+                    </div>
+                    <div class="overlay-item" id="177">
+                        <h3>Nachruf zum Tod von Berti Metsch</h3>
+                        <p><strong>Liebe Schützenbrüder,</strong><br><br>wir haben die traurige Pflicht, Euch mitzuteilen, dass unser Schützenbruder Albert (Berti) Metsch am 
+                            23. August 2019 verstorben ist.<br>Berti war seit 39 Jahren Mitglied der Bürgerschützen-Gesellschaft Kevelaer e.V. und hatte am 
+                            29. Dezember sein 86. Lebensjahr vollendet.<br>1980 wurde Berti in die Bürgerschützen-Gesellschaft aufgenommen. Von 1985 bis 2006 
+                            war er Beisitzer im Vorstand. Die Königswürde zu erringen war über viele Jahre sein innigster Wunsch, der ihm mit dem Königsschuss 
+                            im Jahre 2000 erfüllt wurde. Zu seinem Adjutanten ernannte er seinen Schützenbruder und Freund Peter Hohl. Auch im Stadtbund war Berti sehr aktiv. 
+                            In den Jahren 1998 bis 2010 war Berti Stadtbundmeister; 2010 wurde er zum Ehrenstadtbundmeister ernannt. Berti nahm an nahezu allen 
+                            Schützenveranstaltungen teil; sein Fehlen war die große Ausnahme. 2016 ernannten ihn seine Schützenbrüder in der Jahreshauptversammlung zum Ehrenmitglied. 
+                            Die Jahreshauptversammlung 2019 war die letzte Veranstaltung, an der er aktiv teilnahm. Dem diesjährigen Schützenkönig Georg Vloet winkte er vom 
+                            Krankenhausfenster zu. Dass dies für viele Schützenbrüder die letzte Begegnung mit unserem treuen Schützenbruder sein sollte, vermutete hier noch niemand.<br>
+                            Mit Berti Metsch verlieren wir einen Schützenbruder, auf den wir stets zählen konnten. Er war dem alten und dem neuen Vorstand ein guter und bereitwilliger 
+                            Ratgeber. Wir werden ihn in unseren Reihen vermissen.<br>Wir begleiten Berti auf seinem letzten Weg.<br>Dazu treffen wir uns am Freitag, 30. August 2019, 
+                            um 14.15 Uhr an der St. Antonius-Pfarrkirche. Wir tragen Schützenanzug mit schwarzer Krawatte und Schützenhut. Auf besonderen Wunsch der Familie soll zudem 
+                            das Schützensilber angelegt werden (Orden, Königs- und Adjutantenkette etc.).<br><br>Mit herzlichem Schützengruß<br>Stefan Boßmann</p>
+                        <small><em>JB 28.08.2019</em></small>
+                    </div>
                 </div>
             </section>
             <section class="content even" id="Vorstand">
@@ -167,8 +215,8 @@
             <section class="content" id="Downloads">
                 <div class="item right">
                     <h2>Downloads und Formulare</h2>
-                    <h4 onclick="location.href='#top';"><a href="pdfs/satzung-bsg03-2008.pdf" download="">Aktuelle Satzung</a></h4>
-                    <h4 onclick="location.href='#top';"><a href="pdfs/Anmeldeformular.pdf" download="">Anmeldeformular für neue Mitglieder</a></h4> 
+                    <h4><a href="pdfs/satzung-bsg03-2008.pdf" download="">Aktuelle Satzung</a></h4>
+                    <h4><a href="pdfs/Anmeldeformular.pdf" download="">Anmeldeformular für neue Mitglieder</a></h4> 
                 </div>
                 <div class="content-img">
                     <img src="images/downloads.jpg">
