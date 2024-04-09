@@ -161,6 +161,7 @@ h1 {
 
 .content img:hover {
     scale: 2;
+    z-index: 2;
 }
 
 .even {
@@ -337,6 +338,7 @@ footer a::after {
     margin: 5vh 5vw;
     padding-bottom: 2em;
     scroll-margin-block-start: 2em;
+    isolation: isolate;
 }
 
 .overlay .close-pos {
@@ -345,6 +347,7 @@ footer a::after {
     justify-content: flex-end;
     position: sticky;
     top: 5em;
+    margin-bottom: 2em;
 }
 
 .overlay .close {
@@ -356,7 +359,6 @@ footer a::after {
     height: 3em;
     margin: 0 2em;
     top: 2em;
-    z-index: 2;
 }
 
 .overlay span {
@@ -388,25 +390,59 @@ footer a::after {
     margin-bottom: 1em;
 }
 
+.overlay-item img {
+    width: 25%;
+    border-radius: 1em;
+}
+
 .image-wrapper {
+    margin: 0 3em;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2em;
 }
 
 .overlay-image {
     width: 30%;
+    height: fit-content;
+    z-index: -1;
+    margin-top: 2em;
 }
 
-.image-wrapper img {
+.overlay-image img {
     width: 100%;
+    border-radius: 1em;
+}
+
+.Nachruf {
+    position: relative;
+    overflow: hidden;
+}
+
+.Nachruf::after {
+    content: " ";
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 5%;
+    rotate: -45deg;
+    top: 10%;
+    left: -30%;
+}
+
+.Nachruf img {
+    filter: grayscale(100%);
 }
 
 .image-wrapper .overlay-item {
     width: 60%;
+    margin: 0;
 }
 
 video {
     width: 100%;
+    z-index: -1;
 }
 
 small {
@@ -540,5 +576,18 @@ small {
 
     footer a {
         padding: 1em 0;
+    }
+
+    .image-wrapper {
+        flex-direction: column;
+    }
+
+    .overlay-item img {
+        width: 100%;
+    }
+
+    .image-wrapper .overlay-image,
+    .image-wrapper .overlay-item {
+        width: 100%;
     }
 }

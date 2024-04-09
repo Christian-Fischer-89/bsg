@@ -50,7 +50,7 @@ function showNews() {
     document.getElementById("news").style.display= "flex";
 };
 
-//hide overlay
+//Nachrichtenarchiv ausblenden
 
 function hideNews() {
     document.getElementById("news").style.display= "none";
