@@ -35,16 +35,19 @@ function loadImg(path) {
     gallery.forEach((div) => {
         for (var i = 1; i <= div.dataset.count; i++) {
         const img = document.createElement("img");
-        img.src = "images/" + path + i + ".jpg";
+        img.src = "images/Galerie/" + path + "/" + i + ".jpg";
         img.alt = path + " " + i;
         div.appendChild(img);
         }
     });
 }
 
-document.getElementById("gallery").addeventlistener("load", loadImg("test/"));
+const galleries = document.getElementsByClassName("img-grid");
+for (var i = 0; i < galleries.length; i++) {
+    galleries[i].addeventlistener("load", loadImg(galleries[i].id));
+}
 
-//Nachrichtenarchiv
+//Nachrichtenarchiv einblenden
 
 function showNews() {
     document.getElementById("news").style.display= "flex";
@@ -59,4 +62,16 @@ function hideNews() {
         elements[i].pause();
         elements[i].currentTime = 0;
     }
+};
+
+//Historie einblenden
+
+function showHistory() {
+    document.getElementById("history").style.display= "flex";
+};
+
+//Historie ausblenden
+
+function hideHistory() {
+    document.getElementById("history").style.display= "none";
 };

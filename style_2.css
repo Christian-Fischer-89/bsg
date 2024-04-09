@@ -155,13 +155,6 @@ h1 {
 .content img {
     box-shadow: 0 0 2em 0 lightgrey;
     width: 100%;
-    transform-origin: left top;
-    transition: all 500ms;
-}
-
-.content img:hover {
-    scale: 2;
-    z-index: 2;
 }
 
 .even {
@@ -290,14 +283,6 @@ tr:hover {
     margin: 0.25em 0;
 }
 
-#Aktuelles img,
-#Downloads img,
-#Historie img,
-#Galerie img {
-    transform-origin: right top;
-    transition: all 500ms;
-}
-
 .img-grid {
     display: grid;
     gap: 1em;
@@ -391,7 +376,7 @@ footer a::after {
 }
 
 .overlay-item img {
-    width: 25%;
+    width: 50%;
     border-radius: 1em;
 }
 
@@ -404,6 +389,8 @@ footer a::after {
 }
 
 .overlay-image {
+    position: sticky;
+    top: 6em;
     width: 30%;
     height: fit-content;
     z-index: -1;
@@ -589,5 +576,9 @@ small {
     .image-wrapper .overlay-image,
     .image-wrapper .overlay-item {
         width: 100%;
+    }
+
+    .overlay-image {
+        position: static;
     }
 }

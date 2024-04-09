@@ -317,24 +317,210 @@
                 <div class="item right">
                     <h2>Die Geschichte der Bürger-Schützen in Kevelaer</h2>
                     <div class="Historie-grid">
-                        <h4 onclick="location.href='#top';"><a>Die Gründung</a></h4>
-                        <h4 onclick="location.href='#top';"><a>Die Zeit bis 1914</a></h4>
-                        <h4 onclick="location.href='#top';"><a>Die Zeit nach 1918</a></h4> 
-                        <h4 onclick="location.href='#top';"><a>Die Jahre 1933 - 1945</a></h4> 
-                        <h4 onclick="location.href='#top';"><a>Der Wiederaufbau nach dem Krieg</a></h4> 
-                        <h4 onclick="location.href='#top';"><a>Das Festjahr 1964</a></h4> 
-                        <h4 onclick="location.href='#top';"><a>Das Festjahr 1978</a></h4>
-                        <h4 onclick="location.href='#top';"><a>Die Jahre bis 1981</a></h4>
-                        <h4 onclick="location.href='#top';"><a>Das 100-jährige Jubiläum</a></h4>
-                        <h4 onclick="location.href='#top';"><a>Die Jahre 1982 bis heute</a></h4>
-                        <h4 onclick="location.href='#top';"><a>"Fetten Donderdag"</a></h4>
-                        <h4 onclick="location.href='#top';"><a>Die Kevelaer Harmonists</a></h4>
-                        <h4 onclick="location.href='#top';"><a>Die Akte V.</a></h4>
+                        <h4 onclick="showHistory(); location.href='#Gründung'"><a>Die Gründung</a></h4>
+                        <h4 onclick="showHistory(); location.href='#1914'"><a>Die Zeit bis 1914</a></h4>
+                        <h4 onclick="showHistory(); location.href='#1918'"><a>Die Zeit nach 1918</a></h4>
+                        <h4 onclick="showHistory(); location.href='#1933'"><a>Die Jahre 1933 - 1945</a></h4>
+                        <h4 onclick="showHistory(); location.href='#Krieg'"><a>Der Wiederaufbau nach dem Krieg</a></h4>
+                        <h4 onclick="showHistory(); location.href='#1964'"><a>Das Festjahr 1964</a></h4>
+                        <h4 onclick="showHistory(); location.href='#1978'"><a>Das Festjahr 1978</a></h4>
+                        <h4 onclick="showHistory(); location.href='#1981'"><a>Die Jahre bis 1981</a></h4>
+                        <h4 onclick="showHistory(); location.href='#100-Jahre'"><a>Das 100-jährige Jubiläum</a></h4>
+                        <h4 onclick="showHistory(); location.href='#1982'"><a>Die Jahre 1982 bis heute</a></h4>
+                        <h4 onclick="showHistory(); location.href='#Donderdag'"><a>"Fetten Donderdag"</a></h4>
+                        <h4 onclick="showHistory(); location.href='#Harmonists'"><a>Die Kevelaer Harmonists</a></h4>
+                        <h4 onclick="showHistory(); location.href='#Akte-V'"><a>Die Akte V.</a></h4>
                     </div>
                 </div>
                 <div class="content-img">
                     <img src="images/buerger-125.jpg">
                     <p>Die Bürger-Schützen 2006 zum 125-jährigen Bestehen der Gesellschaft</p>
+                </div>
+            </section>
+            <section id="history" class="overlay">
+                <div class="close-pos">
+                    <div class="close" onclick="hideHistory()">
+                        <span></span>
+                    </div>
+                </div>
+                <h2>Die Geschichte der Bürger-Schützen-Gesellschaft</h2>
+                <div class="image-wrapper" id="Gründung">
+                    <div class="overlay-image">
+                        <img src="images/Historie/aloys-opwis.jpg">
+                        <p><em>Aloys Opwis - Präsident von 1900 bis 1906</em></p>
+                    </div>
+                    <div class="overlay-item">
+                        <h3>Gründung</h3>
+                        <p>Es war im Jahr 1881, eine Zeit der sozialen Umschichtung, als es im Kevelaerer Vereinsleben bei den St. Sebastianus-Schützen zu brodeln begann. 
+                            Ansichten und Anschauungen der Älteren und Jüngeren standen sich gegenüber. Vor allem war es der Punkt „Junggesellentum“, an dem sich letztlich die 
+                            Geister schieden. Etliche Mitglieder wollten auch „getraude Menße“ in ihren Reihen sehen. Sprecher dieser Gruppe war der temperamentvolle und 
+                            redegewandte Ass (Aloys) Opwis, ein Zigarrenfabrikant von der Maasstraße. Er sorgte dafür, dass sich Gleichgesinnte mit ihm im „Ossekopp“, bei Witwe 
+                            A. Martens auf der Maasstrasse, trafen.</p>
+                        <img src="images/Historie/1881-satzung3.jpg">
+                        <p><em>Gründungsurkunde - 1. Seite<br>
+                            (Die vollständigen Statuten zur Gründung der Bürger-Schützen Gesellschaft Kevelaer
+                            1881 e.V. befinden sich im Archiv der Stadt Kevelaer)</em></p>
+                        <p>Erst am 6. Dezember 1881 kam es zu einem festgefügten äußeren Rahmen und der Ausarbeitung von Statuten. Der erste Vorsitzende wurde Wilhelm Martens, 
+                            sein Stellvertreter Aloys Opwis, der Gründungsinitiator.</p>
+                        <img src="images/Historie/wilhelm-martens.jpg">
+                        <p><em>Wilhelm Martens - Vorsitzender von 1881 bis 1900</em></p>
+                        <p>Am 12. Januar 1882 wurden die Statuten vom Oberpräsidenten der Rheinprovinz genehmigt. Im ersten Mitgliederverzeichnis sind 35 aktive und 16 inaktive 
+                            Mitglieder vermerkt.</p>
+                    </div>
+                </div>
+                <div class="image-wrapper" id="1914">
+                    <div class="overlay-image">
+                        <img src="images/Historie/saengerbund1.jpg">
+                        <p><em>Auf diesem Bild aus dem Jahre 1886 befinden sich die Präsidenten Wilhelm Martens, Aloys Opwis, Wilhelm van den Wyenbergh, die Festkettenträger Anton 
+                            Janson und Heinrich Paes, sowie die Mitglieder Josef Iding und Gerhard Aengenheyster.</em></p>
+                    </div>
+                    <div class="overlay-item">
+                        <h3>Die Zeit bis 1914</h3>
+                        <p>Ab 1882 wurde alljährlich das Preis- und Königsschießen durchgeführt, zunächst nur als Preisschießen, ab 1884 ging es auch um die Königswürde. Ferdinand 
+                            Gossens landete den Haupttreffer und wurde somit erster König der Gesellschaft. Das Königsschießen hatte seitdem im Vereinsleben, das im Besonderen der 
+                            Pflege der Geselligkeit gewidmet war, eine herausragende Bedeutung. 1886 ging aus den Reihen der Bürgerschützen der Männer-Gesang-Verein „Sängerbund“ 
+                            hervor. Durch den Gesang sollte ein weiteres Mittel zur Pflege der Geselligkeit und die würdige Ausgestaltung der Vereinsfeiern bewirkt werden.</p>
+                        <img src="images/Historie/koenig-josef-pluempe-25jahrfeier.jpg">
+                        <p><em>1906 - 25-jähriges Jubiläum der Bürger-Schützen Gesellschaft</em></p>
+                        <p>Als Wilhelm Martens aus beruflichen Gründen im November 1900 Kevelaer verließ, wurde Aloys Opwis neuer Präsident. Im Jahre 1905 wurde die Vogelstange aus 
+                            verschiedenen Gründen von Schravelen auf Kevelaerer Gebiet verlegt. Bürgerschützen errichteten gemeinsam mit den St. Sebastianus-Schützen den Schießstand 
+                            bei Scholten an der Twistedener Straße. 25 Jahre nach der Gründung, im Jahre 1906, wurde das erste Jubiläum in glanzvoller Weise gefeiert.<br>
+                            Josef Plümpe, seit langen Jahren Hauptmann der Gesellschaft, errang die Königswürde. Im selben Jahr mussten sich die Bürgerschützen, als die Inhaberin des 
+                            Lokals „Ossekopp“ starb, nach einem neuen Vereinslokal umsehen. Es folgte der Wechsel zum Hotel „Zum goldenen Apfel“, seitdem und bis heute, also jetzt 
+                            seit 100 Jahre, das Vereinslokal der Bürgerschützen. Als 1906 Aloys Opwis sein Amt niederlegte, wurde er zum Ehrenpräsidenten und Franz Wilhelm van den 
+                            Wyenbergh zu seinem Nachfolger gewählt.</p>
+                        <img src="images/Historie/franz-wilhelm-van-den-wyenberg.jpg">
+                        <p><em>Franz Wilhelm van den Weyenbergh - Präsident von 1906 bis 1913</em></p>
+                        <p>1908 waren es die Bürgerschützen, die bei der gemeinsamen Kirmesfeier, die in diesem Jahr zum ersten Mal stattfand, mit dem amtierenden Schützenkönig, 
+                            dem Bäckermeister Anton Janson, den ersten Festkettenträger stellte. Bürgermeister Marx hatte eine gemeinschaftliche Kirmesfeier und ein Volksfest 
+                            vorgeschlagen und die Mitwirkung der Gemeindevertretung zugesagt. So kam es in diesem Jahr zum Zusammenschluss der Geselligen Vereine Kevelaers.</p>
+                        <img src="images/Historie/1908-fkt-anton-janson.jpg">
+                        <p><em>Anton Janson - Festkettenträger 1908</em></p>
+                        <p>Am 9. November 1913 trat Franz Wilhelm van den Wyenbergh von seinem Amt als Präsident zurück und der Architekt Mauritz Hoymann führte seitdem die 
+                            Gesellschaft. Franz Wilhelm van den Wyenbergh wurde zum zweiten Ehrenpräsidenten gewählt. Nur ein Jahr konnte der neue Präsident sein Amt ausüben. 
+                            Als 1914 der erste Weltkrieg ausbrach, mussten mit ihm 20 Vereinsmitglieder an die Front. Acht Bürgerschützen kamen aus dem Kriegsgeschehen nicht mehr 
+                            zurück, unter ihnen auch der Präsident.</p>
+                        <img src="images/Historie/mauritz-hoymann.jpg">
+                        <p><em>Mauritz Hoymann - Präsident von 1913 bis 1914</em></p>
+                    </div>
+                </div>
+                <div class="image-wrapper" id="1918">
+                    <div class="overlay-image">
+                        <img src="images/Historie/arnold-dyx.jpg">
+                        <p><em>Arnold Dyx - Präsident von 1921 bis 1937</em></p>
+                    </div>
+                    <div class="overlay-item">
+                        <h3>Die Zeit nach 1918</h3>
+                        <p>Unter dem Eindruck der schlimmen Kriegsereignisse kam es erst am 21. März 1920 zu einer Versammlung, die dem Gedenken der gefallenen und vermissten 
+                            Kameraden galt. Da satzungsgemäß erst 1921 ein neuer Präsident gewählt werden konnte, wurde Arnold Dyx  zum stellvertretenden Präsidenten bestellt. Damit 
+                            kam eine Persönlichkeit an die Spitze der Gesellschaft, die neben Aloys Opwis wohl die Bedeutendste war. Das Wirken von Arnold Dyx ging weit über die 
+                            Bürger-Schützen Gesellschaft hinaus. So hat Arnold Dyx sich  als Präsident der Geselligen Vereine sehr rege für das Kevelaerer Vereinsleben eingesetzt. 
+                            Am 13. November 1921 erfolgte die ordnungsgemäße Wahl von Arnold Dyx zum Präsidenten der Gesellschaft.</p>
+                        <p>Während der Kriegsjahre waren alle Festlichkeiten unterblieben. Erst am Kirmessonntag, am 8. Mai 1921, gab es einen Familienabend, an dem für die 40-jährige 
+                            Zugehörigkeit zur Gesellschaft Aloys Opwis, Wilhelm Martens, Georg Iding, Joh. van Wickeren und Friedrich Wilhelm Rütter „durch Ansprache und Dekorierung“ 
+                            geehrt wurden.<br>
+                            Bis 1922 war es verboten, Preis- und Königsschießen durchzuführen. Trotzdem kam es im Mai des Jahres 1922 wieder zum traditionellen Schießen. Bei großem 
+                            Interesse und großer Beteiligung kam Wilhelm Kösters von der Hauptstraße zu Königswürden. In den folgenden Jahren bewirkten die politischen Verhältnisse 
+                            (Besetzung desRuhrgebietes durch die Belgier und Franzosen), dass der Vorstand im November 1923einen Beschluss verkünden ließ, dass einstweilen keine 
+                            Monatsversammlungen stattfindenund die üblichen Familienabende ausfallen. Das Vereinsleben kam vollständig zum Ruhen.</p>
+                        <img src="images/Historie/1931-gruppenbild-50-jahrfeier.jpg">
+                        <p><em>50 Jahre Bürgerschützen mit ihrem Jubelkönig August van Aaken und seinem Adjutanten Theodor Iding</em></p>
+                        <p>Somit ist es das Jahr 1927, das in der Vereinsgeschichte wieder Bedeutung gewinnt. Mit dem Hotelier Heinrich Paes stellen die Bürgerschützen zum zweiten 
+                            Mal einen Festkettenträger. Die dann folgenden Jahre gingen im Gleichmaß schöner Geselligkeit weiter. Zu besonderen Festlichkeiten kam es 1931. Da standen 
+                            die Feiern zum 50-jährigen Jubiläum an. Am Kirmesdienstag war die Spannung groß, wer es denn wohl beim Königsschießen zum Jubelkönig schaffen würde. 
+                            August van Aaken war der glückliche Schütze, zu einem Adjutanten bestimmte er seinen Nachbarn Theodor Iding.<br>
+                            Am 6. Juni 1931 begann das Festjahr mit einem Festbankett. Franz van Betteraey hatte den Festsaal in schönstem Schmuck hergerichtet, der musikalische 
+                            Rahmen wurde vom Musikverein und dem Sängerbund gestaltet. Die Festansprache hielt der Präsident Arnold Dyx. Am Sonntag, dem 6. Juni 1931, gab es nach 
+                            einer Morgenmusik am Nachmittag einen Festzug unter der Beteiligung der Geselligen Vereine und am Abend ein Festkonzert. Am Montag wurde den gefallenen 
+                            und verstorbenen Mitgliedern gedacht und am Nachmittag gab es den Ausklang bei „gemeinschaftlichem Kaffee mit Damen“. Für alle Beteiligten war es eine 
+                            starke Demonstration der Verbundenheit von Bürger-Schützen Gesellschaft und den Bürgern der Stadt.</p>
+                        <img src="images/Historie/1933-vorstand-gesellige-vereine.jpg">
+                        <p><em>Der Vorstand der Geselligen Vereine 1933 mit dem Präsidenten Arnold Dyx und dem Platzkommandanten Max Janssen aus den Reihen der Bürgerschützen<br>
+                            hintere Reihe v.li.n.re.: Karl Mauer, Schriftführer, Max Janssen, Platzkommandant, Anton Senger, Kassierer<br>
+                            vordere Reihe v.li.n.re.: Arnold Dyx, Präsident der Bürgerschützen und Präsident der Geselligen Vereine und Anton Voss</em></p>
+                        <p>Der Mitgliederstand im Juni 1933 war: drei Ehrenmitglieder, 93 aktive und 43 inaktive Mitglieder.</p>
+                    </div>
+                </div>
+                <div class="image-wrapper" id="1933">
+                    <div class="overlay-image">
+                        <img src="images/Historie/1937-praesi-josef-aengenheyster.jpg">
+                        <p><em>Josef Aengenheyster - Präsident von 1937 bis 1960</em></p>
+                    </div>
+                    <div class="overlay-item">
+                        <h3>Die Jahre 1933 – 1945</h3>
+                        <p>Nach der „Machtübernahme“ verhielt sich die Gesellschaft weiterhin neutral. Den Bestrebungen der Herrschenden, die Gesellschaft zu einer Namensänderung zu 
+                            zwingen, konnte geschickt ausgewichen werden. So gelang es ebenso das bis dahin noch bestehende Tanzverbot 1934 durch den Königsball mit König Hein Derix 
+                            zu umgehen. Bis zum Kriegsausbruch gibt es wenig zu vermelden. Berichtenswert ist, dass 1937 Josef Plümpe sein Amt als Hauptmann aus Altersgründen 
+                            niederlegte. Seine Stelle übernahm Fritz van Betteraey. Ebenso musste der 2. Vorsitzende Willi Cleve sein Amt, das er zwei Jahrzehnte innehatte, aus 
+                            Gesundheitsgründen abgeben. Im gleichen Jahr gab es einen weiteren Rücktritt vom Amt: Arnold Dyx, der langamtierende Präsident und große Förderer der 
+                            Gesellschaft, musste ebenso aus Gesundheitsgründen und mit Rücksicht auf sein Alter aus seinem Amt ausscheiden. Einstimmig wurde der bisherige 
+                            Schriftführer Josef Aengenheyster am 16. November 1937 zum neuen Präsidenten gewählt.</p>
+                        <p>Bei Kriegsausbruch im Jahre 1939 war Paul Tebartz Inhaber der Königswürde. Infolge des Kriegsgeschehens gab es kein Königsschießen und somit blieb Paul 
+                            Tebartz 10 Jahre in Amt und Würden. Er wurde die Majestät der Gesellschaft mit der längsten Regierungszeit. Der Krieg traf auch die Gesellschaft hart. 
+                            Alles gesellige Leben erstarb und erst nach 1945 gab es erste Versuche zur Wiederbelebung.</p>
+                    </div>
+                </div>
+                <div class="image-wrapper" id="Krieg">
+                    <div class="overlay-image">
+                        <img src="images/Historie/buschpartie-kattelans.jpg">
+                        <p><em>Buschpartie bei Kattelans<br>
+                            v.li.n.r.: Paul Tebartz, Leo Peters, Fritz van Betteraey jr., Paul Opwis, Fritz van Betteraey sen., Josef Aengenheyster und Fritz Cleve</em></p>
+                    </div>
+                    <div class="overlay-item">
+                        <h3>Der Wiederaufbau nach dem Krieg</h3>
+                        <p>Die erste Versammlung nach dem Krieg fand am 11.April 1948 im „Goldenen Apfel“ statt. 43 Mitglieder waren erschienen, 60 Aktive gehörten der Gesellschaft zu diesem 
+                            Zeitpunkt an. Mit großem Bedauern musste man bei dieser Gelegenheit feststellen, dass Akten, Fahne, Schärpen, Königskette und sonstiges Eigentum der Gesellschaft 
+                            restlos verlorengegangen waren. Damit das gesellige Leben in Gang kommen solle, wurde beschlossen, erstmals nach dem Kriege den Kirmesdienstag wieder zu feiern, 
+                            wenn auch nicht durch Königsschießen, wohl aber als gesellige Veranstaltung. Die erste traditionelle Buschpartie gab es nach einer Zwangspause von neun 
+                            Jahren unter Beteiligung von 100 Schützen bei Kattelans, heute „Waldhaus Dicks“ in Weeze.</p>
+                        <p>In der Versammlung am 17.11.1948 zählte die Gesellschaft bereits wieder 119 aktive und 30 inaktive Mitglieder sowie einen Ehrenvorsitzenden. Die erste 
+                            Nikolausverlosung fand am 8. Dezember 1948 statt. Ein wirkliches Fest mit dem Glanz des Neuen. In dieser Zeit wurde in einer Versammlung am 20. März 1949 
+                            die neue Fahne, die noch heute im Einsatz ist, aus mehreren Entwürfen ausgewählt und angefertigt. 1949 war das Jahr, in dem es erstmals nach zehn Jahren 
+                            wieder einen Schützenkönig und einen Festzug gab. Willy Dierkes erwarb mit einem gutgezielten Armbrustschuss die Königswürde.</p>
+                        <img src="images/Historie/2006-schuetzenkette.jpg">
+                        <p>Im Jahre 1951, mit dem 70-jährigen Bestehen, feierte die Gesellschaft schon wieder in einem glänzenden Rahmen. Festkettenträger war Präsident Josef 
+                            Aengenheyster. Dem Festkettenträger wurde eine Wache aus acht Mitgliedern der Gesellschaft gestellt, die alle den Namen van Betteraey trugen. Zu seinem 
+                            Adjutanten ernannte er Fritz Cleve.</p>
+                        <img src="images/Historie/1951-wache-van-betteraey.jpg">
+                        <p><em>Wachoffizier Anton van Betteraey, Wach Uffz. Karl van Betteraey,<br>
+                            v.l.n.r.: Fritz, Franz, Franz (Kunstmaler), Karl jr., Heinz und Paul van Betteraey</em></p>
+                        <p>In der Versammlung am 12. Januar 1952 gedachte die Gesellschaft dem verstorbenen Ehrenpräsidenten Arnold Dyx, einer Persönlichkeit, die sich wie keine 
+                            andere um die Gesellschaft und deren Ausbau gekümmert hatte. Arnold Dyx galt als das Vorbild in der Pflege der Geselligkeit. Erstmals wurde 1954 in der 
+                            Verbindung mit der Sent-Tönnes-Kermes für die Verstorbenen der Gesellschaft ein Seelenamt gehalten. Eine Tradition, die noch heute – gemeinsam mit der St. 
+                            Sebastianus Bruderschaft – besteht.</p>
+                        <img src="images/Historie/1951-festkettenuebergabe.jpg">
+                        <p><em>Festkettenübergabe durch Bürgermeister Peter Plümpe</em></p>
+                        <p>In der Versammlung am 12. Januar 1952 gedachte die Gesellschaft dem verstorbenen Ehrenpräsidenten Arnold Dyx, einer Persönlichkeit, die sich wie keine 
+                            andere um die Gesellschaft und deren Ausbau gekümmert hatte. Arnold Dyx galt als das Vorbild in der Pflege der Geselligkeit. Erstmals wurde 1954 in der 
+                            Verbindung mit der Sent-Tönnes-Kermes für die Verstorbenen der Gesellschaft ein Seelenamt gehalten. Eine Tradition, die noch heute – gemeinsam mit der St. 
+                            Sebastianus Bruderschaft – besteht. Schon im Jahre 1955 begannen die Vorbereitungen für die Feier des 75-jährigen Bestehens. Jubelkönig im Festjahr wird 
+                            am Kirmesdienstag Franz Peters, sein Adjutant ist Karl van Betteraey.</p>
+                        <img src="images/Historie/1956-koenig-franz-peters.jpg">
+                        <p><em>Jubelkönig Franz Peters und sein Adjutant Karl van Betteraey</em></p>
+                        <p>Das Fest zum 75-jährigen Jubiläum beginnt mit einer Festsitzung am 9.6.1956. In einem glanzvoll dekorierten Saal begrüßte der Präsident die Spitzen von 
+                            Verwaltung und Kirche. Die Festrede hielt Schützenbruder Paul Meyer. Zum Jubiläum sprachen alsdann der Bürgermeister Peter Plümpe und Dechant Heinrich 
+                            Janssen. Am Sonntagmorgen zog die Wache frühzeitig am Königspalais auf, galt es doch das neue Schützenhaus, das die Königswache gestiftet hatte, 
+                            einzuweihen. Im geschlossenen Zug marschierte die Gesellschaft zum Vereinslokal, wo ein Frühkonzert stattfand. Zu diesem Konzert waren sämtliche Vorstände 
+                            der Geselligen Vereine geladen und erschienen. Um 13.30 Uhr wurden die Feierlichkeiten beendet, damit auch alle Teilnehmer für den am Abend stattfindenden 
+                            Königsball gerüstet waren. Der Montag begann mit einem Gottesdienst in der Kerzenkapelle zum Gedenken der verstorbenen und gefallenen Mitglieder. 
+                            Anschließend zogen die Schützen zum Kriegerdenkmal auf dem Friedhof, wo der Präsident einen Kranz niederlegte. Die Gedächtnisrede hielt Bürgermeister Peter 
+                            Plümpe. Außerdem wurden die Ruhestätten der verstorbenen Präsidenten besucht. Zur Erinnerung an das Jubelfest pflanzten die Bürgerschützen drei Bäume am 
+                            Gymnasium.</p>
+                        <img src="images/Historie/1956-standarte-75jahre-buergerschuetzen.jpg">
+                        <p><em>Reiterstandarte zum 75-jährigen Jubiläum</em></p>
+                        <p>Im Jahre 1960 legte Josef Aengenheyster nach 22 Jahren sein Präsidentenamt nieder.  Gleichzeitig wird er auf Lebenszeit zum Ehrenpräsidenten ernannt. 
+                            Fritz Cleve wird neuer Präsident.</p>
+                        <img src="images/Historie/1958-vorstand-bsg.jpg">
+                        <p><em>Vorstand 1958<br>
+                            v.l.n.r. Präsident Josef Aengenheyster, Adjutant Fritz Cleve, Hauptmann Fritz van Betteraey sen., Kassierer Willy Derricks, Major Phillip Bergmann</em></p>
+                        <p>Mit einer besonderen Überraschung wartete im Mai 1961 Otto Tenhaef, der Präsident des Elferrats am Fetten Donderdag, auf: Der Elferrat stiftete zum 
+                            80-jährigen Bestehen der Gesellschaft die Präsidentenkette, die unser Präsident noch heute trägt.</p>
+                        <img src="images/Historie/1961-1964-fritz-cleve.jpg">
+                        <p><em>Fritz Cleve - Präsident von 1960 bis 1964</em></p>
+                        <p>Fritz Cleve ist es auch, der im Jahre 1964 als Repräsentant der Bürgerschützen die Festkette trägt, sein Adjutant war Paul Quick.</p>
+                        <img src="images/Historie/1961-ueberreichung-praesidentenkette 2.jpg">
+                        <p><em>Übergabe der Präsidentenkette durch Otto Tenhaef an Fritz Cleve</em></p>
+                    </div>
                 </div>
             </section>
             <section class="content even" id="Würdenträger">
@@ -352,7 +538,7 @@
             <section class="content" id="Galerie">
                 <div class="item right">
                     <h2>Bildergalerie</h2>
-                    <div id="gallery" class="img-grid" data-count="3"></div>
+                    <div id="test" class="img-grid" data-count="5"></div>
                 </div>
                 <div class="content-img">
                     <img src="images/koenig-adju2022.jpg">
