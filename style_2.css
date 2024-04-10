@@ -402,22 +402,6 @@ footer a::after {
     border-radius: 1em;
 }
 
-.Nachruf {
-    position: relative;
-    overflow: hidden;
-}
-
-.Nachruf::after {
-    content: " ";
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    height: 5%;
-    rotate: -45deg;
-    top: 10%;
-    left: -30%;
-}
-
 .Nachruf img {
     filter: grayscale(100%);
 }
@@ -459,7 +443,7 @@ small {
     }
 
     header {
-        background-image: linear-gradient(to bottom, rgb(0, 63, 31), rgb(0, 63, 31), rgba(0, 63, 31, 0.5));
+        background-image: linear-gradient(to bottom, rgb(0, 63, 31), rgb(0, 63, 31), rgba(0, 63, 31, 0.5), transparent);
         justify-content: space-around;
         align-items: center;
         color: white;
@@ -567,6 +551,11 @@ small {
 
     .image-wrapper {
         flex-direction: column;
+    }
+
+    .overlay-item {
+        padding-bottom: 2em;
+        border-bottom: 0.125em dotted rgba(0, 63, 31, 0.5);
     }
 
     .overlay-item img {
