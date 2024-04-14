@@ -75,3 +75,39 @@ function showHistory() {
 function hideHistory() {
     document.getElementById("history").style.display= "none";
 };
+
+//Könige einblenden
+
+function showKings() {
+    document.getElementById("Könige").style.display= "flex";
+};
+
+//Könige ausblenden
+
+function hideKings() {
+    document.getElementById("Könige").style.display= "none";
+};
+
+//Festkettenträger einblenden
+
+function showFest() {
+    document.getElementById("Festkettenträger").style.display= "flex";
+};
+
+//Festkettenträger ausblenden
+
+function hideFest() {
+    document.getElementById("Festkettenträger").style.display= "none";
+};
+
+//Buschkönige einblenden
+
+function showBusch() {
+    document.getElementById("Buschkönige").style.display= "flex";
+};
+
+//Buschkönige ausblenden
+
+function hideBusch() {
+    document.getElementById("Buschkönige").style.display= "none";
+};

@@ -830,10 +830,76 @@
                 </div>
                 <div class="item">
                     <h2>Die Würdenträger der Bürger-Schützen</h2>
-                    <h4><a>Könige</a></h4>
-                    <h4><a>Festkettenträger</a></h4>
-                    <h4><a>Buschkönige</a></h4> 
+                    <h4 onclick="showKings(); location.href='#Könige'"><a>Könige</a></h4>
+                    <h4 onclick="showFest(); location.href='#Festkettenträger'"><a>Festkettenträger</a></h4>
+                    <h4 onclick="showBusch(); location.href='#Buschkönige'"><a>Buschkönige</a></h4> 
                 </div>
+            </section>
+            <section id="Könige" class="overlay">
+                <div class="close-pos">
+                    <div class="close" onclick="hideKings()">
+                        <span></span>
+                    </div>
+                </div>
+                <h2>Die Könige der Bürger-Schützen-Gesellschaft</h2>
+                <table cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="key">2023</td>
+                        <td class="name">König Maurice Pastuska - Adjutant Michael Pool</td>
+                    </tr>
+                    <tr>
+                        <td class="key">2022</td>
+                        <td class="name">König Tobias Kocken - Adjutant Klaus Keuler</td>
+                    </tr>
+                    <tr>
+                        <td class="key">2019</td>
+                        <td class="name">König Georg Vloet - Adjutant Manuel Vloet</td>
+                    </tr>
+                    <tr>
+                        <td class="key">2018</td>
+                        <td class="name">König Stefan Passen - Adjutant Hermann Voß</td>
+                    </tr>
+                    <tr>
+                        <td class="key">2017</td>
+                        <td class="name">König Benedikt Mayer - Adjutant Jürgen Aben</td>
+                    </tr>
+                    <tr>
+                        <td class="key">2016</td>
+                        <td class="name">König Jürgen Borghs - Adjutant Thomas Ingenpass</td>
+                    </tr>
+                    <tr>
+                        <td class="key">2015</td>
+                        <td class="name">König Stefan Boßmann - Adjutant Michael Pool</td>
+                    </tr>
+                    <tr>
+                        <td class="key">2014</td>
+                        <td class="name">König Thomas Nolden - Adjutant Stefan Passens</td>
+                    </tr>
+                    <tr>
+                        <td class="key">2013</td>
+                        <td class="name">König Werner Barz - Adjutant Jan Klucken</td>
+                    </tr>
+                    <tr>
+                        <td class="key">2012</td>
+                        <td class="name">König Karl-Gerd Dingermann - Adjutant Werner Blass</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="Festkettenträger" class="overlay">
+                <div class="close-pos">
+                    <div class="close" onclick="hideFest()">
+                        <span></span>
+                    </div>
+                </div>
+                <h2>Die Festkettenträger der Bürger-Schützen-Gesellschaft</h2>
+            </section>
+            <section id="Buschkönige" class="overlay">
+                <div class="close-pos">
+                    <div class="close" onclick="hideBusch()">
+                        <span></span>
+                    </div>
+                </div>
+                <h2>Die Buschkönige der Bürger-Schützen-Gesellschaft</h2>
             </section>
             <section class="content" id="Galerie">
                 <div class="item right">
