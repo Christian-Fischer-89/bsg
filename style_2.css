@@ -404,6 +404,14 @@ footer a::after {
     border-radius: 1em;
 }
 
+.overlay .key {
+    padding: 0 1em 0 2em;
+}
+
+.overlay .name {
+    padding: 0 2em 0 1em;
+}
+
 .Nachruf img {
     filter: grayscale(100%);
 }
@@ -413,8 +421,10 @@ footer a::after {
     margin: 0;
 }
 
-.overlay table {
-    width: 90%;
+#Könige :not(h2),
+#Festkettenträger :not(h2),
+#Buschkönige :not(h2) {
+    align-items: center;
 }
 
 video {
