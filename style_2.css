@@ -471,14 +471,42 @@ small {
     }
 
     .mob-nav {
-        display: flex;
-        justify-content: center;
+        display: block;
+        position: relative;
         width: 15%;
-        padding: 0 0.5em;
+        padding: 0 2em;
+        -webkit-user-select: none;
+        user-select: none;
     }
 
-    .mob-nav[aria-expanded="true"] :is(.top, .bot) {
-        y: 45;
+    .mob-nav input {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 3;
+        -webkit-touch-callout: none;
+    }
+
+    .mob-nav span {
+        display: block;
+        width: 2.5em;
+        height: 0.375em;
+        margin: 0.25em auto;
+        position: relative;
+        background-color: white;
+        border-radius: 100vw;
+        z-index: 1;
+        transform-origin: 27.5%;
+    }
+
+    .mob-nav[aria-expanded="true"] span {
+        transition: rotate 250ms ease-in 250ms, opacity 250ms ease-in, margin 250ms ease-in;
+        margin: 0 auto;
+    }
+
+    .mob-nav[aria-expanded="false"] span {
+        transition: rotate 250ms ease-in, opacity 250ms ease-in 250ms, margin 250ms ease-in 250ms;
     }
 
     .mob-nav[aria-expanded="true"] .top {
@@ -491,16 +519,6 @@ small {
 
     .mob-nav[aria-expanded="true"] .bot {
         rotate: -45deg;
-    }
-
-    .mob-nav rect {
-        fill: white;
-        transition: y 250ms ease-in 250ms, rotate 250ms ease-in, opacity 0ms 250ms;
-        transform-origin: center;
-    }
-
-    .mob-nav[aria-expanded="true"] rect {
-        transition: y 250ms ease-in, rotate 250ms ease-in 250ms, opacity 0ms 250ms;
     }
 }
 
