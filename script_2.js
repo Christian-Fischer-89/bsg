@@ -112,3 +112,37 @@ function showBusch() {
 function hideBusch() {
     document.getElementById("Buschkönige").style.display= "none";
 };
+
+//Kontakt einblenden
+
+function showKontakt() {
+    document.getElementById("Kontakt").style.display= "flex";
+};
+
+//Kontakt ausblenden
+
+function hideKontakt() {
+    document.getElementById("Kontakt").style.display= "none";
+};
+//Impressum einblenden
+
+function showImpressum() {
+    document.getElementById("Impressum").style.display= "flex";
+};
+
+//Impressum ausblenden
+
+function hideImpressum() {
+    document.getElementById("Impressum").style.display= "none";
+};
+//Datenschutz einblenden
+
+function showDatenschutz() {
+    document.getElementById("Datenschutz").style.display= "flex";
+};
+
+//Datenschutz ausblenden
+
+function hideDatenschutz() {
+    document.getElementById("Datenschutz").style.display= "none";
+};

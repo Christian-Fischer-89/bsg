@@ -1479,10 +1479,34 @@
             </section>
         </main>
         <footer id="footer" class="content">
-            <h4><a>Kontakt</a></h4>
-            <h4><a>Impressum</a></h4>
-            <h4><a>Datenschutzerklärung</a></h4>
+            <h4 onclick="showKontakt(); location.href='#Kontakt'"><a>Kontakt</a></h4>
+            <h4 onclick="showImpressum(); location.href='#Impressum'"><a>Impressum</a></h4>
+            <h4 onclick="showDatenschutz(); location.href='#Datenschutz'"><a>Datenschutzerklärung</a></h4>
         </footer>
+        <section id="Kontakt" class="overlay">
+            <div class="close-pos">
+                <div class="close" onclick="hideKontakt(); location.href='#footer'">
+                    <span></span>
+                </div>
+            </div>
+            <h2>Kontakt</h2>
+        </section>
+        <section id="Impressum" class="overlay">
+            <div class="close-pos">
+                <div class="close" onclick="hideImpressum(); location.href='#footer'">
+                    <span></span>
+                </div>
+            </div>
+            <h2>Impressum</h2>
+        </section>
+        <section id="Datenschutz" class="overlay">
+            <div class="close-pos">
+                <div class="close" onclick="hideDatenschutz(); location.href='#footer'">
+                    <span></span>
+                </div>
+            </div>
+            <h2>Datenschutzerklärung</h2>
+        </section>
         <script src="script_2.js"></script>
     </body>
 </html>
