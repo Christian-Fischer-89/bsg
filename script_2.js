@@ -20,6 +20,7 @@ const mobNavbar = document.querySelector(".mob-navbar");
 mobNav.addEventListener("click", () => {
     const isOpen = mobNav.getAttribute("aria-expanded");
     if (isOpen === "false") {
+        window.scrollTo(0, 0);
         mobNav.setAttribute("aria-expanded", "true");
         mobNavbar.setAttribute("style", "display:flex");
     } else {
