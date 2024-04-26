@@ -607,4 +607,10 @@ small {
     .overlay-image {
         position: static;
     }
+
+    #Kontakt .overlay-item,
+    #Impressum .overlay-item,
+    #Datenschutz .overlay-item {
+        border-bottom: 0;
+    }
 }
