@@ -135,6 +135,7 @@ function showImpressum() {
 function hideImpressum() {
     document.getElementById("Impressum").style.display= "none";
 };
+
 //Datenschutz einblenden
 
 function showDatenschutz() {
@@ -145,4 +146,16 @@ function showDatenschutz() {
 
 function hideDatenschutz() {
     document.getElementById("Datenschutz").style.display= "none";
+};
+
+//Danke einblenden
+
+function showDanke() {
+    document.getElementById("Danke").style.display= "flex";
+};
+
+//Danke ausblenden
+
+function hideDanke() {
+    document.getElementById("Danke").style.display= "none";
 };

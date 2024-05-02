@@ -1499,14 +1499,28 @@
             </div>
             <h2>Kontakt</h2>
             <div class="overlay-item">
-                <form onsubmit="sendEmail()">  
+                <form action="https://formsubmit.co/christian.fischer89@web.de" onsubmit="showDanke(); location.href='#Danke'" method="POST">  
                     <h3>Wir freuen uns auf Ihre Nachricht</h3>
-                    <input type="text" id="name" placeholder="Name (erforderlich)" required>
-                    <input type="email" id="email" placeholder="E-Mail Adresse (erforderlich)" required>
-                    <input type="text" id="phone" placeholder="Telefonnummer">
-                    <textarea id="message" rows="6" placeholder="Wie können wir weiterhelfen?"></textarea>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="E-Mail Adresse" required>
+                    <input type="hidden" name="_subject" value="Neue BSG-Kontaktanfrage">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/bsg/index_2.html">
+                    <textarea name="message" rows="6" placeholder="Wie können wir weiterhelfen?" required></textarea>
                     <button type="submit">Senden</button>
                 </form>
+            </div>
+        </section>
+        <section id="Danke" class="overlay">
+            <div class="close-pos">
+                <div class="close" onclick="hideDanke(); location.href='#footer'">
+                    <span></span>
+                </div>
+            </div>
+            <h2>Dankeschön für Ihre Nachricht!</h2>
+            <div class="overlay-item">
+                <p>Sie werden nun auf eine Captcha-Seite weitergeleitet. Damit Ihre Kontaktanfrage abgesendet werden kann, setzen Sie dort bitte das Häkchen. Danach werden Sie auf 
+                    unsere Startseite zurückverwiesen und Ihre Nachricht ist auf dem Weg.</p>
             </div>
         </section>
         <section id="Impressum" class="overlay">
@@ -1554,10 +1568,10 @@
                     47623 Kevelaer<br>
                     vorstand@buergerschuetzen-kevelaer.com</p>
                 <h3>Arten der verarbeiteten Daten</h3>
-                <p>Bestandsdaten (z.B., Namen, Adressen)<br>
-                    Kontaktdaten (z.B., E-Mail, Telefonnummern)<br>
-                    Inhaltsdaten (z.B., Texteingaben, Fotografien, Videos)<br>
-                    Nutzungsdaten (z.B., besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten)<br>
+                <p>Bestandsdaten (z.B. Namen, Adressen)<br>
+                    Kontaktdaten (z.B. E-Mail, Telefonnummern)<br>
+                    Inhaltsdaten (z.B. Texteingaben, Fotografien, Videos)<br>
+                    Nutzungsdaten (z.B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten)<br>
                     Meta-/Kommunikationsdaten (z.B., Geräte-Informationen, IP-Adressen)</p>
                 <h3>Kategorien betroffener Personen</h3>
                 <p>Besucher und Nutzer des Onlineangebotes (Nachfolgend auch  „Nutzer“).</p>
