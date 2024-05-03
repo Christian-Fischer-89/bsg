@@ -1463,10 +1463,26 @@
             <section class="content" id="Galerie">
                 <div class="item right">
                     <h2>Bildergalerie</h2>
-                    <div id="test" class="img-grid" data-count="5"></div>
+                    <div class="Historie-grid">
+                        <h4 onclick="showImages(); location.href='#test'"><a>Test</a></h4>
+                    </div>
                 </div>
                 <div class="content-img">
                     <img src="images/koenig-adju2022.jpg">
+                </div>
+            </section>
+            <section id="Images" class="overlay">
+                <div class="close-pos">
+                    <div class="close" onclick="hideImages(); location.href='#Galerie'">
+                        <span></span>
+                    </div>
+                </div>
+                <h2>Test</h2>
+                <div id="test" class="img-grid" data-count="5"></div>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
                 </div>
             </section>
             <section class="content even" id="Links">
