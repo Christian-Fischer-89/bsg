@@ -50,17 +50,19 @@ function loadImg(path) {
 }
 
 // Get the modal
-var modal = document.querySelectorAll(".modal");
+var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var Img2 = document.querySelectorAll(".images");
+var img2 = document.querySelectorAll(".images");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-Img2.onclick = function() {
+img2.forEach(item => {
+	item.addEventListener('click', event => {
     modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
+    modalImg.src = item.src;
+    captionText.innerHTML = item.alt;
+  })
+})
 
 //Nachrichtenarchiv einblenden
 
@@ -186,17 +188,8 @@ function hideDanke() {
     document.getElementById("Danke").style.display = "none";
 };
 
-//Modal einblenden
-
-function showModal() {
-    document.getElementById("myModal").style.display = "block";
-    document.getElementById("img01").src = this.src;
-};
-
 //Modal ausblenden
 
 function hideModal() {
     document.getElementById("myModal").style.display = "none";
 };
-
-document.getElementById("bild").setAttribute("click", showModal());
