@@ -43,8 +43,7 @@ function loadImg(path) {
         const img = document.createElement("img");
         img.src = "images/Galerie/" + path + "/" + i + ".jpg";
         img.alt = path + " " + i;
-        img.className = "modal-content";
-        img.id = i;
+        img.className = "images";
         div.appendChild(img);
         }
     });
@@ -54,20 +53,13 @@ function loadImg(path) {
 var modal = document.querySelectorAll(".modal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var modalImg = document.getElementsByClassName("modal-content");
+var Img2 = document.querySelectorAll(".images");
+var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-function showModal() {
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
+Img2.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
 }
 
 //Nachrichtenarchiv einblenden
@@ -90,106 +82,121 @@ function hideNews() {
 //Historie einblenden
 
 function showHistory() {
-    document.getElementById("history").style.display= "flex";
+    document.getElementById("history").style.display = "flex";
 };
 
 //Historie ausblenden
 
 function hideHistory() {
-    document.getElementById("history").style.display= "none";
+    document.getElementById("history").style.display = "none";
 };
 
 //Könige einblenden
 
 function showKings() {
-    document.getElementById("Könige").style.display= "flex";
+    document.getElementById("Könige").style.display = "flex";
 };
 
 //Könige ausblenden
 
 function hideKings() {
-    document.getElementById("Könige").style.display= "none";
+    document.getElementById("Könige").style.display = "none";
 };
 
 //Festkettenträger einblenden
 
 function showFest() {
-    document.getElementById("Festkettenträger").style.display= "flex";
+    document.getElementById("Festkettenträger").style.display = "flex";
 };
 
 //Festkettenträger ausblenden
 
 function hideFest() {
-    document.getElementById("Festkettenträger").style.display= "none";
+    document.getElementById("Festkettenträger").style.display = "none";
 };
 
 //Buschkönige einblenden
 
 function showBusch() {
-    document.getElementById("Buschkönige").style.display= "flex";
+    document.getElementById("Buschkönige").style.display = "flex";
 };
 
 //Buschkönige ausblenden
 
 function hideImages() {
-    document.getElementById("Buschkönige").style.display= "none";
+    document.getElementById("Buschkönige").style.display = "none";
 };
 
 //Images einblenden
 
 function showImages() {
-    document.getElementById("Images").style.display= "flex";
+    document.getElementById("Images").style.display = "flex";
 };
 
 //Images ausblenden
 
 function hideImages() {
-    document.getElementById("Images").style.display= "none";
+    document.getElementById("Images").style.display = "none";
 };
 
 //Kontakt einblenden
 
 function showKontakt() {
-    document.getElementById("Kontakt").style.display= "flex";
+    document.getElementById("Kontakt").style.display = "flex";
 };
 
 //Kontakt ausblenden
 
 function hideKontakt() {
-    document.getElementById("Kontakt").style.display= "none";
+    document.getElementById("Kontakt").style.display = "none";
 };
 //Impressum einblenden
 
 function showImpressum() {
-    document.getElementById("Impressum").style.display= "flex";
+    document.getElementById("Impressum").style.display = "flex";
 };
 
 //Impressum ausblenden
 
 function hideImpressum() {
-    document.getElementById("Impressum").style.display= "none";
+    document.getElementById("Impressum").style.display = "none";
 };
 
 //Datenschutz einblenden
 
 function showDatenschutz() {
-    document.getElementById("Datenschutz").style.display= "flex";
+    document.getElementById("Datenschutz").style.display = "flex";
 };
 
 //Datenschutz ausblenden
 
 function hideDatenschutz() {
-    document.getElementById("Datenschutz").style.display= "none";
+    document.getElementById("Datenschutz").style.display = "none";
 };
 
 //Danke einblenden
 
 function showDanke() {
-    document.getElementById("Danke").style.display= "flex";
+    document.getElementById("Danke").style.display = "flex";
 };
 
 //Danke ausblenden
 
 function hideDanke() {
-    document.getElementById("Danke").style.display= "none";
+    document.getElementById("Danke").style.display = "none";
 };
+
+//Modal einblenden
+
+function showModal() {
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("img01").src = this.src;
+};
+
+//Modal ausblenden
+
+function hideModal() {
+    document.getElementById("myModal").style.display = "none";
+};
+
+document.getElementById("bild").setAttribute("click", showModal());

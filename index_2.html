@@ -832,8 +832,8 @@
             </section>
             <section class="content even" id="Würdenträger">
                 <div class="content-img">
-                    <img src="images/koenig-adju2023.jpg">
-                    <p>König der Bürger-Schützen 2023 Maurice Pastuska mit seinem Adjudanten Michael Pool</p>
+                    <img src="images/koenig-adju2024.jpg">
+                    <p>König der Bürger-Schützen 2023 Markus Kaenders mit seinem Adjudanten Jan Klucken</p>
                 </div>
                 <div class="item">
                     <h2>Die Würdenträger der Bürger-Schützen</h2>
@@ -850,6 +850,10 @@
                 </div>
                 <h2>Die Könige der Bürger-Schützen-Gesellschaft</h2>
                 <table cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="key">2024</td>
+                        <td class="name">König Markus Kaenders - Adjutant Jan Klucken</td>
+                    </tr>
                     <tr>
                         <td class="key">2023</td>
                         <td class="name">König Maurice Pastuska - Adjutant Michael Pool</td>
@@ -1468,7 +1472,7 @@
                     </div>
                 </div>
                 <div class="content-img">
-                    <img src="images/koenig-adju2022.jpg">
+                    <img src="images/koenig-adju2023.jpg" id="bild" onclick="showModal()">
                 </div>
             </section>
             <section id="Images" class="overlay">
@@ -1477,10 +1481,14 @@
                         <span></span>
                     </div>
                 </div>
-                <h2>Test</h2>
+                <h2 onclick="showModal()">Test</h2>
                 <div id="test" class="img-grid" data-count="5"></div>
                 <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
+                    <div class="close-pos">
+                        <div class="close" onclick="hideModal(); location.href='#Images'">
+                            <span></span>
+                        </div>
+                    </div>
                     <img class="modal-content" id="img01">
                     <div id="caption"></div>
                 </div>

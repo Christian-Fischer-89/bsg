@@ -356,15 +356,12 @@ footer a::after {
     top: 2em;
 }
 
-.overlay span,
-.modal span {
+.overlay span {
     top: 1.25em;
 }
 
 .overlay span,
-.modal span,
-.overlay span:after,
-.modal span:after {
+.overlay span:after {
     width: 3em;
     background-color: black;
     height: 0.5em;
@@ -373,8 +370,7 @@ footer a::after {
     rotate: 45deg;
 }
 
-.overlay span:after,
-.modal span:after {
+.overlay span:after {
     content: " ";
     rotate: -90deg;
 }
@@ -489,16 +485,22 @@ form button {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 63, 31, 0.5);
+    background-color:rgba(0, 63, 31, 0.5);
 }
 
   /* Modal Content (image) */
 .modal-content,
 #caption {
     margin: auto;
+    bottom: 2em;
     display: block;
-    width: 80%;
-    max-width: 80vw;
+    height: 70%;
+    max-height: 80vh;
+    border-radius: 1em;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
 }
 
 /* Caption of Modal Image */
@@ -508,20 +510,12 @@ form button {
     height: 2em;
 }
 
-/* Add Animation */
-.modal-content, #caption {  
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
- }
-  
-  @-webkit-keyframes zoom {
+@-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
     to {-webkit-transform:scale(1)}
 }
   
-  @keyframes zoom {
+@keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
 }
