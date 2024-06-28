@@ -43,23 +43,26 @@ function loadImg(path) {
         const img = document.createElement("img");
         img.src = "images/Galerie/" + path + "/" + i + ".jpg";
         img.alt = path + " " + i;
-        img.className = "images";
+        img.className = "myImg";
         div.appendChild(img);
         }
     });
 }
 
 // Get the modal
-var modal = document.querySelectorAll(".modal");
+var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var Img2 = document.querySelectorAll(".images");
+var Img2 = document.querySelectorAll(".myImg");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-Img2.onclick = function() {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+for (var i = 0; i < Img2.length; i++) {
+    var Img3 = Img2[i];
+    Img3.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
 }
 
 //Nachrichtenarchiv einblenden
@@ -123,7 +126,7 @@ function showBusch() {
 
 //Buschkönige ausblenden
 
-function hideImages() {
+function hideBusch() {
     document.getElementById("Buschkönige").style.display = "none";
 };
 
@@ -198,5 +201,3 @@ function showModal() {
 function hideModal() {
     document.getElementById("myModal").style.display = "none";
 };
-
-document.getElementById("bild").setAttribute("click", showModal());
