@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>BSG Kevelaer</title>
+        <link rel="icon" type="image/x-icon" href="images/icon_circled.png">
+        <link rel="stylesheet" href="style_2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="content-type" content="charset=utf-8">
+    </head>
+    <body>
+        <nav>
+            <a href="#top"><img src="images/icon_circled.png" id="first"></a>
+            <ul>
+                <a href="#Aktuelles" class="nav-item" id="1" onclick="check('nav-item', '1')"><li>Aktuelles</li></a>
+                <a href="#Vorstand" class="nav-item" id="3" onclick="check('nav-item', '3')"><li>Vorstand</li></a>
+                <a href="#Downloads" class="nav-item" id="4" onclick="check('nav-item', '4')"><li>Downloads</li></a>
+                <a href="#Kalender" class="nav-item" id="5" onclick="check('nav-item', '5')"><li>Kalender</li></a>
+                <a href="#Historie" class="nav-item" id="6" onclick="check('nav-item', '6')"><li>Historie</li></a>
+                <a href="#Würdenträger" class="nav-item" id="7" onclick="check('nav-item', '7')"><li>Würdenträger</li></a>
+                <a href="#Galerie" class="nav-item" id="8" onclick="check('nav-item', '8')"><li>Galerie</li></a>
+                <a href="#Links" class="nav-item" id="9" onclick="check('nav-item', '9')"><li>Links</li></a>
+            </ul>
+            <a href="#top"><img src="images/icon_circled.png" id="second"></a>
+        </nav>
+        <div class="banner"></div>
+        <header onclick="location.href='#top'">
+            <h1>Bürger-Schützen Gesellschaft Kevelaer e.V. 1881</h1>
+            <div class="mob-nav" aria-expanded="false">
+                <input type="checkbox">
+                <span class="top"></span>
+                <span class="mid"></span>
+                <span class="bot"></span>
+            </div>
+        </header>
+        <img class="myImg" src="https://www.lefayresorts.com/magazine/wp-content/uploads/2021/02/neve-terapia.jpg" alt="Snow" style="width:100%;max-width:300px">
+        <img class="myImg" src="https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg" alt="Sand" style="width:100%;max-width:300px">
+        <img class="myImg" src="https://t4.ftcdn.net/jpg/01/32/70/49/360_F_132704939_Bof3a7mP4mp8eN6XUinUecfBzgqX4Wz6.jpg" alt="Trees" style="width:100%;max-width:300px">
+        <img class="myImg" src="https://media.istockphoto.com/id/1360554439/de/foto/malediven-tropische-insel.jpg?s=612x612&w=0&k=20&c=ZZBXGydvoW1azKexbyc3xRN_xEKuJlOUssAzsHFM3bY=" alt="Water" style="width:100%;max-width:300px">
+        <div id="myModal" class="modal">
+            <div class="close-pos">
+                <div class="close" onclick="hideModal(); location.href='#Images'">
+                    <span></span>
+                </div>
+            </div>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        <section class="content" id="Galerie">
+            <div class="item right">
+                <h2>Bildergalerie</h2>
+                <div class="Historie-grid">
+                    <h4 onclick="showImages(); location.href='#test'"><a>Test</a></h4>
+                </div>
+            </div>
+            <div class="content-img">
+                <img src="images/koenig-adju2023.jpg" class="myImg">
+            </div>
+        </section>
+        <section id="Images" class="overlay">
+            <div class="close-pos">
+                <div class="close" onclick="hideImages(); location.href='#Galerie'">
+                    <span></span>
+                </div>
+            </div>
+            <h2>Test</h2>
+            <div id="test" class="img-grid" data-count="5"></div>
+            <div id="myModal" class="modal">
+                <div class="close-pos">
+                    <div class="close" onclick="hideModal(); location.href='#Images'">
+                        <span></span>
+                    </div>
+                </div>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+        </section>
+        <script src="script_2.js"></script>
+    </body>
+</html>
