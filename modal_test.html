@@ -133,6 +133,24 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+const galleries = document.getElementsByClassName("img-grid");
+for (var i = 0; i < galleries.length; i++) {
+    galleries[i].addeventlistener("load", loadImg(galleries[i].id));
+}
+
+function loadImg(path) {
+    var gallery = document.querySelectorAll(".img-grid");
+    gallery.forEach((div) => {
+        for (var i = 1; i <= div.dataset.count; i++) {
+        const img = document.createElement("img");
+        img.src = "images/Galerie/" + path + "/" + i + ".jpg";
+        img.alt = path + " " + i;
+        img.className = "myImg";
+        div.appendChild(img);
+        }
+    });
+}
 </script>
 
 </body>

@@ -66,6 +66,12 @@ nav ul a {
     transition: all 500ms;
 }
 
+.current {
+    background-color: white;
+    color: black;
+    scale: 1.25;
+}
+
 nav ul a:hover,
 nav ul a:focus {
     scale: 1.25 !important;
@@ -476,7 +482,7 @@ form button {
 }
 
 .modal {
-    display: block;
+    display: none;
     position: fixed;
     z-index: 4;
     padding-top: 100px;
