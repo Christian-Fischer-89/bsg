@@ -53,7 +53,6 @@ function loadImg(path) {
 var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-<<<<<<< HEAD
 var Img2 = document.querySelectorAll(".myImg");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
@@ -65,18 +64,6 @@ for (var i = 0; i < Img2.length; i++) {
         captionText.innerHTML = this.alt;
     }
 }
-=======
-var img2 = document.querySelectorAll(".images");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img2.forEach(item => {
-	item.addEventListener('click', event => {
-    modal.style.display = "block";
-    modalImg.src = item.src;
-    captionText.innerHTML = item.alt;
-  })
-})
->>>>>>> d8a59b2978e7c6f6362aee51707c955f31b91160
 
 //Nachrichtenarchiv einblenden
 
